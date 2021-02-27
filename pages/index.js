@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useState } from 'react'
 import { getSortedPostsData } from '../lib/posts'
 
 export async function getStaticProps() {
@@ -11,6 +12,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+  const [ct,setCt] = useState(0)
   return (
     <div className="container">
       <Head>
@@ -30,9 +32,12 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-
-
-
+    
+        <button
+        onClick={()=>setCt(state=>state+1)}
+        >increment +</button>
+        
+        <div>{ct}</div>
 
       </main>
 
