@@ -1,17 +1,22 @@
 ---
-title: 'When to Use Static Generation v.s. Server-side Rendering'
-date: '2020-01-02'
+title: 179 Tangrams
+date: '2020-01-05'
+preview: https://raw.githubusercontent.com/twpride/tangram/master/demo/gamefull_opt.gif
+bgColor: #000
+blurb: 179 Tangrams is a browser implementation of the classic Chinese puzzle using plain JavaScript(no packages) and the Canvas API. The puzzle consists of seven polygons tiles, which are put together to form shapes. The objective is to replicate a given pattern using all seven tiles without overlap.
+tags: ['portfolio', 'game', 'canvas', 'another']
 ---
 
-<h1 align="center">179 Tangrams</h1>
-<div align="center" >
- <a href="https://twpride.github.io/tangram/">
- Live Site
- </a>
+
+<div style="text-align:center">
+  <h1>179 Tangrams</h1>
+  <div>
+    <a href="https://twpride.github.io/tangram/">
+    Live Site
+    </a>
+  </div>
+  <video controls muted autoplay loop height="480" src="https://howardhwang.s3-us-west-1.amazonaws.com/gamefull.mp4"></video>
 </div>
-<p align="center">
-  <video controls height="480" src="https://howardhwang.s3-us-west-1.amazonaws.com/gamefull.mp4"></video>
-</p>
 
 Tangrams is a browser implementation of the classic Chinese puzzle using plain JavaScript(no packages) and the [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API). The puzzle consists of seven polygons tiles, which are put together to form shapes. The objective is to replicate a given pattern using all seven tiles without overlap.
 
@@ -28,19 +33,11 @@ For the aforementioned task, a raster based overlap detection algorithm was deve
 
 The screenshot below shows live gameplay with the secondary canvas overlayed on top. As the tiles on the main canvas moves, the secondary canvas is also updated. The green counter is a live reading of sum of total number of non-overlapping silhouette pixels. Notice that when the when the probem solved, the green coutner drops to below 6000, which is the solve threshold, and the timer stops.
 
-<p align="center">
- <img width="360" height="auto" src="https://raw.githubusercontent.com/twpride/tangram/master/demo/sil_opt.gif"></img>
-</p>
-
-
 
 <div style="display: flex; justify-content: center; align-item: center">
-  <img width="360" height="auto" src="https://raw.githubusercontent.com/twpride/tangram/master/demo/sil_opt.gif"></img>
-  <img width="360" height="auto" src="https://raw.githubusercontent.com/twpride/tangram/master/demo/sil_opt.gif"></img>
+ <img width="360" height="auto" src="https://raw.githubusercontent.com/twpride/tangram/master/demo/sil_opt.gif"></img>
 </div>
 
-
-<!-- ![sil_opt](https://raw.githubusercontent.com/twpride/tangram/master/demo/sil_opt.gif) -->
 
 ### Algorithm details
 We start out painting the silhouette then the tangram tiles on a secondary canvas that is off-screen. By ensuring that the geometric centers of the silhouette and the tangram tiles align, it follows that there is maximum overlap between the tangram tiles and the silhouette when the puzzle is solved. Conversely, this means that the non-overlapping areas of the silhouette is at a minimum.
@@ -52,9 +49,10 @@ After every tile move, the program sums the red pixel values of all the pixels o
 
 ## A custom carousel element
 
-<p align="center">
- <img width="360" height="auto" src="https://raw.githubusercontent.com/twpride/tangram/master/demo/slider_opt.gif"></img>
-</p>
+
+<div style="display: flex; justify-content: center; align-item: center">
+  <img width="360" height="auto" src="https://raw.githubusercontent.com/twpride/tangram/master/demo/slider_opt.gif"></img>
+</div>
 
 ### Hover preview
 As the use hover the mouse over each problem icon in the carousel, the game canvas updates with a preview of the problem and the current state of the tiles in that level. The silhouette for unsolved problems are blurred in the preview to prevent the player from getting a head start before starting the timer.
@@ -68,9 +66,10 @@ The carousel also functions as a heat map that tracks the player's progress. The
 The heat map adds a badge-like reward mechanism to the gameplay experience. The user may be motivated to fill up the entire carousel with green boxes :)
  
 ## Collision detection
-<p align="center">
- <img width="360" height="auto" src="https://raw.githubusercontent.com/twpride/tangram/master/demo/collision_opt.gif"></img>
-</p>
+<div style="display: flex; justify-content: center; align-item: center">
+  <img width="360" height="auto" src="https://raw.githubusercontent.com/twpride/tangram/master/demo/collision_opt.gif"></img>
+</div>
+
 
 Adding realism to the game play, the program checks for collision between the puzzle tiles. After each tile move, if there is a collision, the penetration amount between the penetrating vertex and the penetrated edge is calculated.
 

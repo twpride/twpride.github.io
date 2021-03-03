@@ -6,23 +6,29 @@ export default function Post({ postData }) {
   return <Layout>
     <Head>
       <title>{postData.title}</title>
+
+      <link
+        rel="preload"
+        href="https://unpkg.com/prismjs@0.0.1/themes/prism.css"
+        as="style"
+      />
+      <link
+        rel="preload"
+        href="https://unpkg.com/prismjs@0.0.1/themes/prism-tomorrow.css"
+        as="style"
+      />
+      <link
+        href={`https://unpkg.com/prismjs@0.0.1/themes/prism.css`}
+        rel="stylesheet"
+      />
+
     </Head>
-    {postData.title}
-    <br />
+    {/* {postData.title}
     {postData.id}
-    <br />
-    {postData.date}
-    <br />
-    <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    <link
-      rel="preload"
-      href="https://unpkg.com/prismjs@0.0.1/themes/prism-tomorrow.css"
-      as="script"
-    />
-    <link
-      href={`https://unpkg.com/prismjs@0.0.1/themes/prism-tomorrow.css`}
-      rel="stylesheet"
-    />
+    {postData.date} */}
+
+    <div id="post" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+
   </Layout>
 }
 

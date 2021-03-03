@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export && touch ./out/.nojekyll && gh-pages -d out",
+    "build": "next build && next export && touch ./out/.nojekyll && gh-pages -d out -t true",
     "start": "next start"
   },
   "dependencies": {
     "next": "^10.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "sass": "^1.32.8"
   },
   "devDependencies": {
     "gray-matter": "^4.0.2",
