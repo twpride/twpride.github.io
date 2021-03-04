@@ -8,12 +8,13 @@ export default function Navbar() {
 
   useEffect(() => {
 
-    const handleScroll = () => setScroll(state => (
+    const handleScroll = (e) => {
+      setScroll(state => (
       {
         navHide: window.pageYOffset - state.prevScroll > 0,
         prevScroll: window.pageYOffset
       }
-    ))
+    ))}
 
 
     setScroll(
@@ -29,8 +30,15 @@ export default function Navbar() {
   }, [])
 
   return <nav className={`nav${scroll && scroll.navHide ? ' nav-hide' : ''}`}>
-    <div><a href="#">Home</a></div>
-    <div><a href="#">About</a></div>
-    <div><a href="#">Hom</a></div>
+    <div>
+      <a href="/">
+        <div id="home-link">
+          {/* <img src="/apple-touch-icon.png"> */}
+          {/* </img> */}
+          howard hwang
+        </div>
+      </a>
+      <div><a href="/about">about</a></div>
+    </div>
   </nav>
 }

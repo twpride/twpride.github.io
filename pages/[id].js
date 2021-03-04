@@ -1,8 +1,8 @@
-import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import Layout from '../components/layout'
+import { getAllPostIds, getPostData } from '../lib/posts'
 import Head from 'next/head'
 
-export default function Post({ postData }) {
+export default function Something({ postData }) {
   return <Layout>
     <Head>
       <title>{postData.title}</title>
@@ -23,17 +23,17 @@ export default function Post({ postData }) {
       />
 
     </Head>
-    {/* {postData.title}
-    {postData.id}
-    {postData.date} */}
 
-    <div id="post" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+    <div className="center-card" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 
   </Layout>
 }
 
+const pth  = 'pages'
+
 export async function getStaticPaths() {
-  const paths = getAllPostIds()
+  const paths = getAllPostIds(pth)
+  console.log(paths)
   return {
     paths,
     fallback: false
@@ -42,7 +42,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   // Fetch necessary data for the blog post using params.id
-  const postData = await getPostData(params.id)
+  const postData = await getPostData(params.id, pth)
   return {
     props: {
       postData

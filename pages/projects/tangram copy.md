@@ -3,7 +3,7 @@ title: 179 Tangrams
 date: '2020-01-05'
 preview: https://raw.githubusercontent.com/twpride/tangram/master/demo/gamefull_opt.gif
 bgColor: #000
-blurb: 179 Tangrams is a browser implementation of the classic Chinese puzzle using plain JavaScript(no packages) and the Canvas API. The puzzle consists of seven polygons tiles, which are put together to form shapes. The objective is to replicate a given pattern using all seven tiles without overlap.
+blurb: 179 Tangrams is a browser implementation of the classic Chinese puzzle using plain JavaScript(no packages) and the Canvas API.
 tags: ['portfolio', 'game', 'canvas', 'another']
 ---
 
@@ -15,7 +15,7 @@ tags: ['portfolio', 'game', 'canvas', 'another']
     Live Site
     </a>
   </div>
-  <video controls muted autoplay loop height="480" src="https://howardhwang.s3-us-west-1.amazonaws.com/gamefull.mp4"></video>
+  <video style="width:min(480px,100%)"controls muted autoplay loop src="https://howardhwang.s3-us-west-1.amazonaws.com/gamefull.mp4"></video>
 </div>
 
 Tangrams is a browser implementation of the classic Chinese puzzle using plain JavaScript(no packages) and the [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API). The puzzle consists of seven polygons tiles, which are put together to form shapes. The objective is to replicate a given pattern using all seven tiles without overlap.

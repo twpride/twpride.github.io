@@ -16,54 +16,6 @@ tags: ['portfolio', 'music']
 </div>
 <br/>
 
-<h3 align="center">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jump to time & skip song &nbsp; | &nbsp; Song search -> preview -> add
-</h3>
-<br/>
-
-<div style="display: flex; justify-content: center; align-item: center">
-  <figure>
-    <img width="270" height="auto" src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/scrub-skip.gif" />
-    <figcaption> 
-      Jump to time & skip song
-    </figcaption>
-  </figure>
-  <figure>
-    <img width="270" height="auto" src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/search-flow.gif" />
-    <figcaption> Song search -> preview -> add </figcaption>
-  </figure>
-</div>
-
-<div style="display: flex; justify-content: center; align-item: center">
-  <figure>
-    <img width="270" height="auto" src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/drag-reorder-track.gif" />
-    <figcaption> 
-      Drag number to reorder playlist
-    </figcaption>
-  </figure>
-  <figure>
-    <img width="270" height="auto" src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/media-control.gif" />
-    <figcaption> Media control on lock screen </figcaption>
-  </figure>
-</div>
-
-
-
-<div style="display: flex; justify-content: center; align-item: center">
-  <figure>
-    <img width="270" height="auto" src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/edit-song-info.gif" />
-    <figcaption> 
-      Edit song information
-    </figcaption>
-  </figure>
-  <figure>
-    <img width="270" height="auto" src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/darkmode-toggle.gif" />
-    <figcaption> Dark / Light mode toggle </figcaption>
-  </figure>
-</div>
-
-
-
 
 <h3 align="center">
 Desktop interface (responsive layout)
@@ -126,3 +78,45 @@ A mobile friendly music streaming web app using S3 storage. For a demo, please c
 ### Features to add
   + Batch addition and deletion of tracks to playlist
   + Batch editing of song metadata
+
+
+<div class="double" style="width:min(600px, var(--card-width))">
+  <figure>
+    <img src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/scrub-skip.gif" />
+    <figcaption> 
+      Jump to time & skip song
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/search-flow.gif" />
+    <figcaption> Song search -> preview -> add </figcaption>
+  </figure>
+</div>
+
+<div class="double" style="width:min(600px, var(--card-width))">
+  <figure>
+    <img src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/drag-reorder-track.gif" />
+    <figcaption> 
+      Drag number to reorder playlist
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/media-control.gif" />
+    <figcaption> Media control on lock screen </figcaption>
+  </figure>
+</div>
+
+
+
+<div class="double" style="width:min(600px, var(--card-width))">
+  <figure>
+    <img src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/edit-song-info.gif" />
+    <figcaption> 
+      Edit song information
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/darkmode-toggle.gif" />
+    <figcaption> Dark / Light mode toggle </figcaption>
+  </figure>
+</div>

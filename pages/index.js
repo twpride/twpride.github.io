@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
 import { getSortedPostsData } from '../lib/posts'
 import Layout from '../components/layout'
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  // console.log(allPostsData)
+  const allPostsData = getSortedPostsData('pages/projects')
   return {
     props: {
       allPostsData
@@ -15,38 +13,24 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
-  const [ct, setCt] = useState(0);
-
   return (
     <Layout>
       <Head>
         <title>Howard Hwang</title>
       </Head>
-      <div>
-        {allPostsData.map(({ id, title, date, preview, blurb, tags, bgColor }) => (
-          <div className='preview' key={id}>
-            <img src={preview} style={{ backgroundColor: bgColor }}></img>
-            <div>
-              <Link href={`/posts/${id}`}>
-                <div className="title">{title}</div>
+      {allPostsData.map(({ id, title, date, preview, blurb, tags, bgColor }) => (
+        <div className='center-card preview' key={id}>
+          <img src={preview} style={{ backgroundColor: bgColor }}></img>
+          <div>
+            <div className="title">
+              <Link href={`/projects/${id}`}>{title}
               </Link>
-              <br />
-              <div className="blurb">{blurb}</div>
             </div>
+            <br />
+            <div className="blurb">{blurb}</div>
           </div>
-        ))}
-      </div>
-
-
-      <button
-        onClick={() => setCt(state => state + 1)}
-      >increment +</button>
-
-      <div>{ct}</div>
-      <Link href="/posts/tangram">
-        <a>tangram</a>
-      </Link>
-
+        </div>
+      ))}
 
 
     </Layout>
