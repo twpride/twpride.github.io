@@ -33,7 +33,6 @@ const pth  = 'pages'
 
 export async function getStaticPaths() {
   const paths = getAllPostIds(pth)
-  console.log(paths)
   return {
     paths,
     fallback: false
