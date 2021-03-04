@@ -3,7 +3,7 @@ title: 179 Tangrams
 date: '2020-01-05'
 preview: /media/tangram_thumb.png
 bgColor: #000
-blurb: 179 Tangrams is a browser implementation of the classic Chinese puzzle. Built with plain JavaScript (no packages) and the Canvas API.
+blurb: 179 Tangrams is a browser implementation of the classic Chinese puzzle. Key features are collision detection and puzzle solve detection. Built with plain JavaScript (no packages) and the Canvas API.
 tags: ['portfolio', 'game', 'canvas', 'another']
 ---
 

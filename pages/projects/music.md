@@ -22,7 +22,7 @@ Desktop interface (responsive layout)
 </h3>
 <br/>
 <p align="center">
-  <img width="600" height="auto" src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/desktop-adaptive.gif"></img>
+  <img style="width:min(600px,100%)"  src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/desktop-adaptive.gif"></img>
 </p>
 <br/>
 
