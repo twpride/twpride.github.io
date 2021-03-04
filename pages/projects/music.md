@@ -1,8 +1,8 @@
 ---
 title: Music Player One
 date: 2020-01-01
-blurb: A mobile friendly music streaming app using React and PostgreSQL. Has playlist capability.
-preview: https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/desktop-adaptive.gif
+blurb: A music streaming web app with song search and playlist capability. Built with React and Django.
+preview: /media/music_thumb.png
 bgColor: #000
 tags: ['portfolio', 'music']
 ---

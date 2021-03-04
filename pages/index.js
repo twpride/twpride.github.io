@@ -20,7 +20,9 @@ export default function Home({ allPostsData }) {
       </Head>
       {allPostsData.map(({ id, title, date, preview, blurb, tags, bgColor }) => (
         <div className='center-card preview' key={id}>
-          <img src={preview} style={{ backgroundColor: bgColor }}></img>
+          <Link href={`/projects/${id}`}>
+            <img src={preview} style={{ backgroundColor: bgColor }}></img>
+          </Link>
           <div>
             <div className="title">
               <Link href={`/projects/${id}`}>{title}

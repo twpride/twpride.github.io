@@ -10,7 +10,7 @@ export default function Layout({ children }) {
       <meta property="og:title" content="Portfolio" />
       <meta property="og:description" content="Howard Hwang" />
       <meta property="og:url" content="https://twpride.github.io" />
-      <meta property="og:image" content="https://raw.githubusercontent.com/twpride/tangram/master/demo/collision_opt.gif" />
+      <meta property="og:image" content="/media/portfolio_thumb.png" />
 
       <meta name="theme-color" content="#90cdf4" />
       <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
