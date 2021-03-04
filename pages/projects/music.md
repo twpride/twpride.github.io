@@ -41,7 +41,7 @@ A mobile friendly music streaming web app using S3 storage. For a demo, please c
   + Integrated media controls allows the user to controll playback from desktop keyboard or Bluetooth device
 + Dark/Light mode toggle
 
-## Implementation
+## Implementation Details
 
 ### Playlists
   - Backend ([Django](https://www.djangoproject.com/) | [Postgresql](https://www.postgresql.org/)):
@@ -75,7 +75,7 @@ A mobile friendly music streaming web app using S3 storage. For a demo, please c
   + Batch addition and deletion of tracks to playlist
   + Batch editing of song metadata
 
-## Mobile UI Screenshots
+<h2 align="center">Mobile UI Screenshots</h2>
 <div class="double" style="width:min(600px, var(--card-width))">
   <figure>
     <img src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/scrub-skip.gif" />

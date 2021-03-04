@@ -144,10 +144,11 @@ a {
   width: 100%;
   border-top: 1px lightgrey solid;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
-  > div {
+  > div:first-of-type {
     width: 150px;
     display: flex;
     align-items: center;
@@ -160,6 +161,12 @@ a {
   }
   svg {
     fill: var(--accent-color);
+  }
+
+  > div:last-of-type {
+    position: absolute;
+    font-size: 0.7rem;
+    bottom: 2px;
   }
 }
 
