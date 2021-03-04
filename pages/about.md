@@ -4,5 +4,5 @@ I started out my career as a mechanical engineer but got interested in software 
 
 When I realized that I was spending more time working on visualization program than on the  experiments that the visualization program was built for, I decided to pursue software developement fulltime. 
 
-From February to June 2020, I attended [App Academy](https://www.appacademy.io/) (web development bootcamp, 3% acceptance rate). I am currently working on personal projects and seeking a developer position.
+From February to June 2020, I attended [App Academy](https://www.appacademy.io/) (web development bootcamp, 3% acceptance rate). I am currently working on personal projects and seeking a developer position. You can reach me at <howard.L.hwang@gmail.com>. Thanks for reading! 
 

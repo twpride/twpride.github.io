@@ -26,7 +26,7 @@ export default function Footer() {
       }, 2000);
     }
 
-    document.getElementById("email").addEventListener("click", () => copyTextToClipboard('twpride@gmail.com'));
+    document.getElementById("email").addEventListener("click", () => copyTextToClipboard('howard.L.hwang@gmail.com'));
   }, [])
 
   return <div id="footer">
