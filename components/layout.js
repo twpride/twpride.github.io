@@ -7,8 +7,8 @@ export default function Layout({ children }) {
 
   return <>
     <Head>
-      <meta property="og:title" content="Portfolio" />
-      <meta property="og:description" content="Howard Hwang" />
+      <meta property="og:title" content="Howard Hwang" />
+      <meta property="og:description" content="Personal site" />
       <meta property="og:url" content="https://twpride.github.io" />
       <meta property="og:image" content="/media/portfolio_thumb.png" />
 
