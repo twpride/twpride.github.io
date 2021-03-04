@@ -39,6 +39,7 @@ a {
 :root {
   --card-width: 800px;
   font-size: 1.1rem;
+  --gutter: 20px;
 }
 
 @media (max-width: 900px) {
@@ -51,6 +52,7 @@ a {
 @media (max-width: 500px) {
   :root {
     font-size: 0.9rem;
+    --gutter: 10px;
   }
 }
 
@@ -107,7 +109,7 @@ a {
 
 .preview {
   display: flex;
-  height: calc((var(--card-width) - 20px) * 3 / 8);
+  height: calc((var(--card-width) - var(--gutter)) * 3 / 8);
 
   img {
     width: 50%;
@@ -115,14 +117,14 @@ a {
     height: 100%;
     object-fit: scale-down;
   }
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 40px;
 
   > div {
-    margin-left: 20px;
+    margin-left: var(--gutter);
     width: 50%;
-    // border-bottom: 1px dotted #7e0000;
-    border-bottom: 1px dashed grey;
+    border-bottom: 1px dashed var(--accent-color);
+    // border-bottom: 1px dashed grey;
   }
 
   div.blurb {
@@ -136,8 +138,6 @@ a {
 }
 
 #footer {
-  // position: absolute;
-  // bottom: 0;
   margin-top: auto;
   height: 100px;
   width: 100%;
@@ -148,10 +148,17 @@ a {
 
   > div {
     width: 150px;
-    fill: var(--accent-color);
     display: flex;
     align-items: center;
     justify-content: space-around;
+    > * {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  svg {
+    fill: var(--accent-color);
   }
 }
 
@@ -204,4 +211,3 @@ a {
     margin: 10px;
   }
 }
-
