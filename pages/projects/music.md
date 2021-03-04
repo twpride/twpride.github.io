@@ -7,23 +7,17 @@ bgColor: #000
 tags: ['portfolio', 'music']
 ---
 
-<h1 align="center">Music Player One</h1>
-
-<div align="center" >
+<div style="text-align:center">
+  <h1>Music Player One</h1>
   <a href="https://music-player-1.herokuapp.com/">
-  Live Site
+    <h2>
+      Live Site
+    </div>
   </a>
-</div>
-<br/>
-
-
-<h3 align="center">
-Desktop interface (responsive layout)
-</h3>
-<br/>
-<p align="center">
   <img style="width:min(600px,100%)"  src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/desktop-adaptive.gif"></img>
-</p>
+</div>
+
+
 <br/>
 
 
@@ -79,7 +73,7 @@ A mobile friendly music streaming web app using S3 storage. For a demo, please c
   + Batch addition and deletion of tracks to playlist
   + Batch editing of song metadata
 
-
+## Mobile UI Screenshots
 <div class="double" style="width:min(600px, var(--card-width))">
   <figure>
     <img src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/scrub-skip.gif" />

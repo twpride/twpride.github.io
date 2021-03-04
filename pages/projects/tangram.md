@@ -10,11 +10,11 @@ tags: ['portfolio', 'game', 'canvas', 'another']
 
 <div style="text-align:center">
   <h1>179 Tangrams</h1>
-  <div>
-    <a href="https://twpride.github.io/tangram/">
-    Live Site
-    </a>
-  </div>
+  <a href="https://twpride.github.io/tangram/">
+    <h2 align="center" >
+      Live Site
+    </div>
+  </a>
   <video style="width:min(480px,100%)" controls muted autoplay loop src="https://howardhwang.s3-us-west-1.amazonaws.com/gamefull.mp4"></video>
 </div>
 
