@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+JAM Stack portfolio built using Next.js.
+
+[Live Site](https://twpride.github.io/)
