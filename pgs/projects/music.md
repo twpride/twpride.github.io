@@ -16,9 +16,7 @@ tags: ['portfolio', 'music']
   </a>
 
 </div>
-<p align="center">
   <img style="width:min(600px,100%)"  src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/desktop-adaptive.gif"></img>
-</p>
 
 <br/>
 

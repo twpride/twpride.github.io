@@ -5,39 +5,39 @@ export default function Footer() {
   const [TTvis, setTTvis] = useState(false)
   const [copied, setCopied] = useState(false)
 
-  useEffect(() => {
-    function copyTextToClipboard(text) {
-      var textArea = document.createElement("textarea");
-      textArea.value = text;
-      document.body.appendChild(textArea);
-      textArea.select();
-      try {
-        var successful = document.execCommand('copy');
-        var msg = successful ? 'successful' : 'unsuccessful';
-        console.log('Copying text command was ' + msg);
-      } catch (err) {
-        console.log('Oops, unable to copy');
-      }
-      document.body.removeChild(textArea);
-      setTTvis(false)
-      setCopied(true)
-      setInterval(() => {
-        setCopied(false)
-      }, 2000);
-    }
+  // useEffect(() => {
+  //   function copyTextToClipboard(text) {
+  //     var textArea = document.createElement("textarea");
+  //     textArea.value = text;
+  //     document.body.appendChild(textArea);
+  //     textArea.select();
+  //     try {
+  //       var successful = document.execCommand('copy');
+  //       var msg = successful ? 'successful' : 'unsuccessful';
+  //       console.log('Copying text command was ' + msg);
+  //     } catch (err) {
+  //       console.log('Oops, unable to copy');
+  //     }
+  //     document.body.removeChild(textArea);
+  //     setTTvis(false)
+  //     setCopied(true)
+  //     setInterval(() => {
+  //       setCopied(false)
+  //     }, 2000);
+  //   }
 
-    document.getElementById("email").addEventListener("click", () => copyTextToClipboard('howard.L.hwang@gmail.com'));
-  }, [])
+  //   document.getElementById("email").addEventListener("click", () => copyTextToClipboard('howard.L.hwang@gmail.com'));
+  // }, [])
 
   return <div id="footer">
     <div>
-      <div id="email" className="tooltip" onMouseEnter={() => setTTvis(true)} onMouseLeave={() => setTTvis(false)}>
+      {/* <div id="email" className="tooltip" onMouseEnter={() => setTTvis(true)} onMouseLeave={() => setTTvis(false)}>
         <span className={`tooltiptext${copied ? ' tooltip-visible' : ''}`}>email copied to clipboard</span>
         <span className={`tooltiptext${TTvis ? ' tooltip-visible' : ''}`}>copy email to clipboard</span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
           <path d="M0 0h24v24H0z" fill="none" />
           <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg>
-      </div>
+      </div> */}
       <a href='https://github.com/twpride'>
         <svg id='github' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
           width="24">

@@ -29,8 +29,8 @@ export default function Post({ postData }) {
   </Layout>
 }
 
-const pth = 'pages/projects' 
-
+const pth = 'pgs/projects' 
+console.log(pth,'here')
 export async function getStaticPaths() {
   const paths = getAllPostIds(pth)
   return {

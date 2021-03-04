@@ -4,7 +4,8 @@ import { getSortedPostsData } from '../lib/posts'
 import Layout from '../components/layout'
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData('pages/projects')
+  // const allPostsData = getSortedPostsData('pages/projects')
+  const allPostsData = getSortedPostsData('pgs/projects')
   return {
     props: {
       allPostsData
@@ -20,8 +21,9 @@ export default function Home({ allPostsData }) {
       </Head>
       {allPostsData.map(({ id, title, date, preview, blurb, tags, bgColor }) => (
         <div className='center-card preview' key={id}>
-          <Link href={`/projects/${id}`}>
-            <img src={preview} style={{ backgroundColor: bgColor }}></img>
+          {/* <Link href={`/projects/${id}`} > */}
+          <Link href="/projects/[id]" as={`/projects/${id}`} >
+          <img src={preview} style={{ backgroundColor: bgColor }}></img>
           </Link>
           <div>
             <div className="title">
