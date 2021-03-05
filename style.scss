@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   height: 100%;
-  color:#514045
+  color: #514045;
 }
 
 div#__next {
@@ -36,6 +36,23 @@ a {
     text-decoration: underline;
   }
 }
+
+p {
+  >code {
+    padding: .2em .4em;
+    font-size: 85%;
+    color: #c7254e;
+    background-color: #ffeef3;
+    border-radius: 6px;
+  }
+}
+
+.remark-highlight {
+  font-size: 0.8em;
+}
+
+
+
 
 :root {
   --card-width: 800px;
@@ -140,7 +157,6 @@ a {
     // border-bottom: 1px dashed grey;
   }
 
-
   div.title {
     font-size: 1.5em;
     font-weight: 500;
@@ -231,3 +247,4 @@ a {
     margin: 10px;
   }
 }
+
