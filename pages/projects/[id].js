@@ -24,13 +24,12 @@ export default function Post({ postData }) {
 
     </Head>
 
-    <div className="center-card" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+    <div className="center-card post" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 
   </Layout>
 }
 
-const pth = 'pgs/projects' 
-console.log(pth,'here')
+const pth = 'pages/projects' 
 export async function getStaticPaths() {
   const paths = getAllPostIds(pth)
   return {

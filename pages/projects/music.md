@@ -9,17 +9,16 @@ tags: ['portfolio', 'music']
 
 <div style="text-align:center">
   <h1>Music Player One</h1>
-  <a href="https://music-player-1.herokuapp.com/">
     <h2>
+  <a href="https://music-player-1.herokuapp.com/">
       Live Site
-    </div>
   </a>
-
+  </h2>
 </div>
+<p align='center'>
   <img style="width:min(600px,100%)"  src="https://raw.githubusercontent.com/twpride/music-player-1/main/assets/demo/desktop-adaptive.gif"></img>
-
+</p>
 <br/>
-
 
 ## About
 

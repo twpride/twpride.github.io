@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   height: 100%;
+  color:#514045
 }
 
 div#__next {
@@ -39,6 +40,7 @@ a {
 :root {
   --card-width: 800px;
   font-size: 1.1rem;
+  line-height: 1.5;
   --gutter: 20px;
 }
 
@@ -107,6 +109,16 @@ a {
   margin-right: auto;
 }
 
+.post {
+  a {
+    border-bottom: 1px dashed var(--accent-color);
+    &:hover {
+      text-decoration: none;
+      border-bottom: 1.5px solid var(--accent-color);
+    }
+  }
+}
+
 .preview {
   display: flex;
   height: calc((var(--card-width) - var(--gutter)) * 3 / 8);
@@ -128,9 +140,6 @@ a {
     // border-bottom: 1px dashed grey;
   }
 
-  div.blurb {
-    color: grey;
-  }
 
   div.title {
     font-size: 1.5em;
@@ -140,7 +149,7 @@ a {
 
 #footer {
   margin-top: auto;
-  height: 100px;
+  height: 120px;
   width: 100%;
   border-top: 1px lightgrey solid;
   display: flex;
@@ -150,6 +159,8 @@ a {
   position: relative;
 
   > div:first-of-type {
+    position: absolute;
+    top: 40px;
     width: 150px;
     display: flex;
     align-items: center;
@@ -167,7 +178,7 @@ a {
   > div:last-of-type {
     position: absolute;
     font-size: 0.7rem;
-    bottom: 2px;
+    bottom: 30px;
   }
 }
 

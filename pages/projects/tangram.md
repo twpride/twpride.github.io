@@ -7,14 +7,13 @@ blurb: 179 Tangrams is a browser implementation of the classic Chinese puzzle. K
 tags: ['portfolio', 'game', 'canvas', 'another']
 ---
 
-
 <div style="text-align:center">
   <h1>179 Tangrams</h1>
-  <a href="https://twpride.github.io/tangram/">
-    <h2>
+  <h2>
+    <a href="https://twpride.github.io/tangram/">
       Live Site
-    </div>
-  </a>
+    </a>
+  </h2>
 </div>
 <p align="center">
   <video style="width:min(480px,100%); margin-left:auto; margin-right:auto" controls muted autoplay loop src="https://howardhwang.s3-us-west-1.amazonaws.com/gamefull.mp4"></video>
