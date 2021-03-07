@@ -37,9 +37,10 @@ a {
   }
 }
 
-p {
-  >code {
-    padding: .2em .4em;
+p,
+li {
+  > code {
+    padding: 0.2em 0.4em;
     font-size: 85%;
     color: #c7254e;
     background-color: #ffeef3;
@@ -47,17 +48,36 @@ p {
   }
 }
 
-.remark-highlight {
-  font-size: 0.8em;
+ul {
+  padding-left: 1rem;
+  ul {
+    margin-left: 0rem;
+  }
 }
 
+::marker {
+  margin-right: 0px;
+}
 
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
 
+.remark-highlight {
+  font-size: 0.85em;
+}
 
 :root {
   --card-width: 800px;
   font-size: 1.1rem;
-  line-height: 1.5;
   --gutter: 20px;
 }
 
@@ -105,8 +125,8 @@ p {
     justify-content: space-between;
     align-items: center;
     width: var(--card-width);
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
   }
 
   #home-link {
@@ -127,6 +147,7 @@ p {
 }
 
 .post {
+  line-height: 1.5;
   a {
     border-bottom: 1px dashed var(--accent-color);
     &:hover {
@@ -153,8 +174,8 @@ p {
   > div {
     margin-left: var(--gutter);
     width: 50%;
-    border-bottom: 1px dashed var(--accent-color);
-    // border-bottom: 1px dashed grey;
+    // border-bottom: 1px dashed var(--accent-color);
+    border-bottom: 1px solid lightgrey;
   }
 
   div.title {
@@ -247,4 +268,3 @@ p {
     margin: 10px;
   }
 }
-

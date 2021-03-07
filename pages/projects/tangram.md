@@ -15,9 +15,7 @@ tags: ['portfolio', 'game', 'canvas', 'another']
     </a>
   </h2>
 </div>
-<p align="center">
-  <video style="width:min(480px,100%); margin-left:auto; margin-right:auto" controls muted autoplay loop src="https://howardhwang.s3-us-west-1.amazonaws.com/gamefull.mp4"></video>
-</p>
+<video style="display:block; width:min(480px,100%); margin-left:auto; margin-right:auto" controls muted autoplay loop src="https://howardhwang.s3-us-west-1.amazonaws.com/gamefull.mp4"></video>
 
 Tangrams is a browser implementation of the classic Chinese puzzle using plain JavaScript(no packages) and the [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API). The puzzle consists of seven polygons tiles, which are put together to form shapes. The objective is to replicate a given pattern using all seven tiles without overlap.
 

@@ -6,19 +6,20 @@ export default function Post({ postData }) {
   return <Layout>
     <Head>
       <title>{postData.title}</title>
-
+      
       <link
         rel="preload"
-        href="https://unpkg.com/prismjs@0.0.1/themes/prism.css"
+        href="https://unpkg.com/prismjs@1.23.0/themes/prism.css"
         as="style"
       />
       <link
         rel="preload"
-        href="https://unpkg.com/prismjs@0.0.1/themes/prism-tomorrow.css"
+        href="https://unpkg.com/prismjs@1.23.0/themes/prism-tomorrow.css"
         as="style"
       />
       <link
-        href={`https://unpkg.com/prismjs@0.0.1/themes/prism.css`}
+        href={`https://unpkg.com/prismjs@1.23.0/themes/prism.css`}
+        // href={`https://unpkg.com/prismjs@1.23.0/themes/prism-tomorrow.css`}
         rel="stylesheet"
       />
 

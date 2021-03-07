@@ -55,6 +55,6 @@ export default function Footer() {
         </svg>
       </a>
     </div>
-    <div>Built using React and statically generated with Next.js <a href='https://github.com/twpride/twpride.github.io'>source</a></div>
+    <div>statically generated with Next.js <a href='https://github.com/twpride/twpride.github.io'>source</a></div>
   </div>
 }
